@@ -12,6 +12,7 @@ il processo di miniaturizzazione delle immagini, ma ho un problema solamente a s
 Le API in questione sono la /resize e la /resize-and-save-images.
 
 Endpoint esposti:
+
     - /resize: Effettua il ridimensionamento di una singola immagine e la fornisce come response.
     - /resize-images: Ridimensiona una lista di immagini ricevute in input e fornisce una response sotto forma di json.
     - /resize-and-save-images: Ridimensiona una lista di immagini ricevute in input e le salva in una cartella locale al progetto (resizedimages).
@@ -20,6 +21,7 @@ La classe per far partire l'applicativo è GeckosoftApplication.
 
 
 Come testare gli endpoint:
+
     - /resize: Andare sulla sezione form-data nel body di Postman e inserire un singolo attributo
                con valore della key = "file" e nel value selezionare l'immagine da ridimensionare
                cambiando tipo sulla key e impostando file.
@@ -45,10 +47,12 @@ Come testare gli endpoint:
 
 
  Tecnologie utilizzate:
-- maven: Gestore di progetto in Java che permette di scaricare automaticamente le dipendenze necessarie al progetto
+- Framework: Spring Boot
+
+- Maven: Gestore di progetto in Java che permette di scaricare automaticamente le dipendenze necessarie al progetto
          indicate all'interno del file pom.xml.
 
-- spring-boot-starter-web: Dipendenza di avvio per progetti Spring Boot che contiene gli strumenti necessari per poter sviluppare
+- Spring-boot-starter-web: Dipendenza di avvio per progetti Spring Boot che contiene gli strumenti necessari per poter sviluppare
                            applicazioni web e servizi REST.
 
-- lombok: Dipendenza in grado di generare automaticamente getter, setter, costruttori con tutti gli argomenti e senza argomenti.
+- Lombok: libreria in grado di generare automaticamente getter, setter, costruttori con tutti gli argomenti e senza argomenti.
